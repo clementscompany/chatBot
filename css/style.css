@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ebebebe1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+body{
+    background-color: #000;
+}
+.buttonAss{
+    padding: 5px 22px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffff;
+    color: #000;
+    font-weight: bolder;
+    margin: 12px;
+}
+.containerChat{
+    gap: 12px;
+    display: flex;
+    position: absolute;
+    right: 12px;
+    top: 25%;
+    align-items: center;
+    overflow: hidden;
+}
+.ChatBot{
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    z-index: 12;
+    display: none;
+}
+.ChatBot.active{
+    animation-name: openChat;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    display: block;
+}
+@keyframes openChat {
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+
+.topChat{
+    padding: 12px;
+    border-bottom: 1px solid #8080803a;
+    text-align: center;
+}
+.response{
+    width: 420px;
+    height: 250px;
+    background-color: dodgerblue;
+    border-radius: 12px;
+    padding: 12px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    display: none;
+}
+.response.actived{
+    display: flex;
+    animation-name: openResponse;
+    animation-duration: 1s;
+
+}
+
+@keyframes openResponse {
+    from{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+.response::-webkit-scrollbar{
+    width: 0;
+}
+.response article{
+    background-color: #ffffff2f;
+    padding: 12px;
+    border-radius: 0 12px 12px 12px;
+}
+.response > article > span{
+    color: #000;
+    font-size: 13pt;
+}
+    
+.chatArea{ 
+    padding-top: 12px;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    overflow-y: auto;
+}
+.chatArea::-webkit-scrollbar{
+    width: 0;
+}
+.chatArea > article{
+    border-radius: 0 16px 16px 16px;
+    padding: 12px;
+    width: calc(100% - 40px);
+    background-color: #ffffff2f;
+    margin: 0  12px;
+    cursor: pointer;
+}
+
