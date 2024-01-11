@@ -1,21 +1,21 @@
-# chatBot
-Repositório para chatBot... um protótipo baseado em suporte online para ajudar na interação e utolização de um aplicativo!
+## chatBot
+- Repositório para chatBot... um protótipo baseado em suporte online para ajudar na interação e utolização de um aplicativo!
 
-<<<<<<< HEAD
+## <<<<<<< HEAD
 instalação fácil..........................
 em um servidor Localhost com os serviços do php my admin 
 banco de dados Mysql
 
 
-...................Configuração....................
+## ...................Configuração....................
 
-nome do banco de dados "chatbot"
-configuração de conexão no arquivo config.php
+- nome do banco de dados ``"chatbot"``
+- configuração de conexão no arquivo ``config.php``
 de acordo com o endereço do servidor 
 
 .............................................
-manco de dados deve ser importado 
-dentro do dirtório dataBase!
+- banco de dados deve ser importado 
+- dentro do dirtório dataBase!
 
 =======
 ![Captura de Tela (9)](https://github.com/clementscompany/chatBot/assets/130271950/a0026352-69b7-4baf-ae06-60466bcc8d79)
